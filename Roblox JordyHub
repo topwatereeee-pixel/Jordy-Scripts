@@ -1,3 +1,4 @@
+--// Jordy's Universal Hub 💥
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local TeleportService = game:GetService("TeleportService")
@@ -14,8 +15,8 @@ clickSound.SoundId = "rbxassetid://12221967"
 clickSound.Volume = 1
 
 local frame = Instance.new("Frame", gui)
-frame.Size = UDim2.new(0, 360, 0, 520)
-frame.Position = UDim2.new(0.5, -180, 0.5, -260)
+frame.Size = UDim2.new(0, 360, 0, 540)
+frame.Position = UDim2.new(0.5, -180, 0.5, -270)
 frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 frame.BorderSizePixel = 0
 frame.Active = true
@@ -47,7 +48,7 @@ collapseBtn.MouseButton1Click:Connect(function()
     clickSound:Play()
     collapsed = not collapsed
     for _, child in pairs(frame:GetChildren()) do
-        if child ~= title and child ~= collapseBtn and child:IsA("TextButton") or child:IsA("TextBox") then
+        if child ~= title and child ~= collapseBtn and (child:IsA("TextButton") or child:IsA("TextBox")) then
             child.Visible = not collapsed
         end
     end
