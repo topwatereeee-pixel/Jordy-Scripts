@@ -27,7 +27,7 @@ corner.CornerRadius = UDim.new(0, 8)
 
 local title = Instance.new("TextLabel", frame)
 title.Size = UDim2.new(1, 0, 0, 40)
-title.Text = "ðŸ”¥ Jordy's Hub"
+title.Text = "Jordy's Hub"
 title.TextColor3 = Color3.fromRGB(255, 0, 0)
 title.BackgroundTransparency = 1
 title.Font = Enum.Font.Arcade
@@ -111,7 +111,7 @@ makeButton("Toggle Noclip", 90, function()
 end)
 
 -- Win Btools
-makeButton("Get Win Btools", 130, function()
+makeButton("Get Btools", 130, function()
     local tool = game:GetObjects("rbxassetid://4666214817")[1]
     if tool then
         tool.Parent = player.Backpack
@@ -137,14 +137,14 @@ end)
 makeButton("Inject cOOlkid GUI", 210, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
     for i = 1, 5 do
-        warn("ðŸ’€ cOOlkid GUI injected [" .. i .. "]")
+        warn("cOOlkid GUI injected [" .. i .. "]")
     end
 end)
 
 -- Fake Admin Join
 makeButton("Fake Admin Join", 250, function()
     local msg = Instance.new("Message", workspace)
-    msg.Text = "âš ï¸ ADMIN JOIN DETECTED: c00lkid"
+    msg.Text = "ADMIN JOIN DETECTED: c00lkid"
     wait(3)
     msg:Destroy()
 end)
@@ -152,7 +152,7 @@ end)
 -- Console Spam
 makeButton("Console Spam", 290, function()
     for i = 1, 10 do
-        warn("ðŸ”¥ SYSTEM OVERRIDE [" .. i .. "]")
+        warn("SYSTEM OVERRIDE [" .. i .. "]")
     end
 end)
 
