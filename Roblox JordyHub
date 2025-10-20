@@ -1,4 +1,4 @@
---// Jordy's Universal Hub ðŸ’¥
+--// Jordy's Universal Hub
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local TeleportService = game:GetService("TeleportService")
